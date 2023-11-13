@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+$h:200px;
+$r:200px;
+$j:160px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.cv-container{
+    display: flex;
+
+}
+
+
+.left-con{
+    width: 20%;
+    height: 100vh;
+    padding:50px;
+    background-color: rgb(112, 229, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    .line{
+        width: 150px;
+        height: 3px;
+        margin: 10px auto;
+        border-radius: 10px;
+        background-color: rgb(6, 222, 64);
+
+    }
+
+    .details-con{
+        margin: 50px auto;
+
+        > ul li{
+                margin: 10px;
+
+                >span{
+                    font-weight: bolder;
+                    color: rgb(1, 1, 10);
+                }
+        }
+    }
+
+
+    > .skill-con{
+
+        align-self: flex-start;
+
+        > .skill-wrap{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 20px auto;
+
+            >h4{
+                width: 20%;
+            }
+
+
+
+
+            > .html-line{
+                width: 85%;
+                background-color: rgb(194, 209, 209);
+                border: 1px solid rgb(57, 167, 27);
+                width: 220px;
+                height: 15px;
+                border-radius: 10px;
+                position: relative;
+
+                > .inner-line{
+                    position: absolute;
+                    top: -1px;
+
+                    border: 1px solid rgb(27, 146, 167);
+                    height: 15px;
+                    width: 200px;
+                    border-radius: 10px;
+                    background-color: rgb(26, 219, 67);
+                }
+
+                > #html{
+                    width: $h;
+                }
+
+                > #react{
+                    width: $r;
+                }
+
+                > #javascript{
+                    width: $j;
+                }
+            }
+        }
+
+    }
+
+}
+
+.right-con{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(243, 239, 239);
+}
+
+
+
+.img-con{
+    height: 150px;
+    width: 150px;
+    animation: myanim 1s  linear  infinite alternate;
+
+}
+
+@keyframes myanim{
+
+    to{
+        transform: translateY(-10px);
+    }
+}
